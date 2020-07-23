@@ -86,11 +86,16 @@ h6 {
 #stores-page-container {
   text-align: center;
   color: azure;
+  width: 1600px;
 }
 
 #back-button {
   justify-content: center;
   margin-bottom: 10px;
+}
+
+#stores-detail {
+  width: 50%;
 }
 
 /* StoresPage end */
@@ -117,3 +122,7 @@ h6 {
 }
 
 /* StoreDetailCards end */
+
+.mappp div:first-child {
+  height: 100px;
+}
