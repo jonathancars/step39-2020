@@ -19,7 +19,9 @@ import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import { ListPageWithStore } from './ListPage.js';
 import { HeaderWithStore } from './Header.js';
+import Footer from './Footer.js';
 import { Store } from './Store';
+import { WelcomePageWithStore } from './Welcome';
 import { StorePageWithStore } from './StoresPage';
 
 function WebRouter() {
@@ -28,7 +30,8 @@ function WebRouter() {
       <Router>
         <Store.Container>
           <Switch>
-            <Route exact path='/' component={() => <div><HeaderWithStore title="Preferences"/><ListPageWithStore /></div>} />
+            <Route exact path='/' component={() => <div><HeaderWithStore title="Welcome"/><WelcomePageWithStore /></div>} />
+            <Route exact path='/lists' component={() => <div><HeaderWithStore title="Lists"/><ListPageWithStore /></div>} />
             <Route path='/stores/:params' component={() => <div><HeaderWithStore title="Store Recommendations"/><StorePageWithStore/></div>} />
             <Route path='/stores' component={() => <div><HeaderWithStore title="Store Recommendations"/><StorePageWithStore/></div>} />
           </Switch>

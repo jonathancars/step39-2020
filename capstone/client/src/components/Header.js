@@ -39,7 +39,7 @@ class Header extends Component {
      */
     loginSuccess = (response) => {
       axios.post(
-        '/api/v1/create-user',
+        'https://step39-2020.uc.r.appspot.com/api/v1/create-user',
         { 
           idTokenString: response.getAuthResponse().id_token,
         },
@@ -82,7 +82,7 @@ class Header extends Component {
             <AppBar position="static">
               <Toolbar>
                 <Typography id="typography" variant="h6">
-                  {this.props.title}
+                  
                 </Typography>
                 {this.state.loggedIn ? 
                 <GoogleLogout
