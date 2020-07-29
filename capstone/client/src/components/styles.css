@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
  /* TODO(carolynlwang): Reactive text sizing */
 h1 {
   color: black;
@@ -124,6 +126,7 @@ h6 {
   margin-left: 20px;
   background-color: #05386b; 
   color: #edf5e1;
+  font-family: 'Open Sans',serif;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -131,6 +134,7 @@ h6 {
 #current-location-button {
   background-color: #05386b; 
   color: #edf5e1;
+  font-family: 'Open Sans',serif;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 510px;
@@ -233,7 +237,7 @@ h6 {
 }
 
 #check-icon {
-  color: #a782da;
+  color: #77bce0;
 }
 
 #directions-text {
@@ -286,8 +290,10 @@ h6 {
 }
 
 #selection-button {
-  background-color: #a782da;
+  background-color: #77bce0;
   border-radius: 4px;
+  color: black;
+  font-family: 'Open Sans',serif;
   margin: 0 10px 0px 10px;
   height: 40px;
   text-transform: none;
@@ -299,8 +305,9 @@ h6 {
 }
 
 #user-lists {
-  background-color: #a782da;
-  color: white; 
+  background-color: #77bce0;
+  color: black;
+  font-family: 'Open Sans',serif;
   text-align: center;
   width: 140px;
 }
@@ -311,8 +318,9 @@ h6 {
 }
 
 #back-button-list-page {
-  background-color: #a782da;
-  color: white;
+  background-color: #c5ddeb;
+  color: black;
+  font-family: 'Open Sans',serif;
   height: 40px;
   text-align: center;
   text-transform: none;
@@ -335,6 +343,8 @@ h6 {
 #interior-button {
   background-color : #77bce0;
   color : #111;
+  font-family: 'Open Sans',serif;
+  text-transform: none;
 }
 
 #stores-loading {
@@ -350,13 +360,15 @@ h6 {
 }
 
 #back-button {
+  background-color: #c5ddeb;
+  color : black;
+  font-family: 'Open Sans',serif;
   justify-content: center;
   margin-top: 10px;  
   margin-bottom: 120px;  
   margin-left: 5px;
   margin-right: 5px;
-  background-color : #05386b;
-  color : #edf5e1;
+  text-transform: none;
 }
 
 .stores-banner-text {
@@ -384,6 +396,11 @@ h6 {
   padding: 20px;
 }
 
+#overview-cards {
+  height: 400px;
+  overflow-y: scroll;
+}
+
 /* StoreOverviewCards end */
 
 /* StoreDetailCards start */
@@ -395,6 +412,11 @@ h6 {
 
 #store-details-container {
   margin-top : 20px;
+}
+
+#details-cards {
+  height: 600px;
+  overflow-y: scroll;
 }
 
 /* StoreDetailCards end */
