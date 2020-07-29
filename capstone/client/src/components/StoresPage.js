@@ -70,7 +70,6 @@ class StorePage extends Component {
         selectedItemTypes : this.state.items,
       } }})
         .then(res => {
-          console.log(res.data);
           this.setState({
             stores: res.data,
             originalStores : res.data
